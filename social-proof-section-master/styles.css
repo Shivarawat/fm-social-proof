@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+:root {
+  --dk-purplish: #512051;
+  --md-purplish: #927b91;
+  --pinkish: #ee69a4;
+  --lt-purplish: #f7f2f7;
+  --white: #ffffff;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Spartan", sans-serif;
+  background-image: url("./images/bg-pattern-top-mobile.svg"),
+    url("./images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
+}
+.social-proof {
+  max-width: 370px;
+  margin: 4rem auto;
+}
+.proof-content {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.proof-statement h1 {
+  font-size: 2.75rem;
+  color: var(--dk-purplish);
+  font-weight: 800;
+}
+.proof-statement p {
+  font-size: 1rem;
+  color: var(--md-purplish);
+  line-height: 1.5rem;
+  letter-spacing: 1.25px;
+  margin: 2rem auto;
+}
+.rating {
+  background-color: var(--lt-purplish);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin: 1rem auto;
+}
+.rating h4 {
+  color: var(--dk-purplish);
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: var(--dk-purplish);
+  color: var(--white);
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  margin: 1rem auto;
+}
+.card img {
+  border-radius: 50%;
+  width: 50px;
+  height: auto;
+}
+.card p {
+  line-height: 1.5rem;
+  font-size: 14px;
+}
+.card .designation {
+  color: var(--pinkish);
+  font-size: 14px;
+  margin-top: 7px;
+}
+.card--head {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 900px) {
+  body {
+    background-image: url("./images/bg-pattern-top-desktop.svg"),
+      url("./images/bg-pattern-bottom-desktop.svg");
+  }
+  .social-proof {
+    max-width: 1200px;
+  }
+  .proof-content {
+    padding: 0 2rem;
+    display: flex;
+    gap: 2rem;
+    margin: 8rem auto 2rem auto;
+    justify-content: space-between;
+  }
+  .proof-statement {
+    flex-basis: 40%;
+    text-align: left;
+  }
+  .rating {
+    width: 350px;
+  }
+  .rating h4 {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 0.85rem;
+  }
+  .cards {
+    display: flex;
+    padding: 0 2rem;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .card {
+    max-width: 280px;
+    padding: 1.5rem 2rem;
+  }
+  .card:nth-of-type(2) {
+    position: relative;
+    top: 40px;
+  }
+  .card:nth-of-type(3) {
+    position: relative;
+    top: 80px;
+  }
+}
